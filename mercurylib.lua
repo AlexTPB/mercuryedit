@@ -416,7 +416,7 @@ end
 function Library:create(options)
 
 	local settings = {
-		Theme = "Dark"
+		Theme = "Rust"
 	}
 
 	if readfile and writefile and isfile then
@@ -885,7 +885,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Toggle Key",
 		Description = "Key to show/hide the UI.",
-		Keybind = Enum.KeyCode.LeftAlt,
+		Keybind = Enum.KeyCode.LeftControl,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)
